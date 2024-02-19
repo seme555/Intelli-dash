@@ -1,0 +1,10 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Semere",
+  "description": "Intelli-Dash: Modern Full Stack Admin Dashboard using MERN",
+  "keywords": [
+    "reactjs",
+    "react",
