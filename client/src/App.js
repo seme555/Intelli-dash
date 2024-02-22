@@ -9,3 +9,15 @@ import { themeSettings } from "theme";
 
 // Scenes
 import {
+  Layout,
+  Dashboard,
+  Products,
+  Customers,
+  Transactions,
+  Geography,
+  Overview,
+  Daily,
+  Monthly,
+  Breakdown,
+  Admin,
+  Performance,
