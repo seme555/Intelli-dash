@@ -7,3 +7,7 @@ import { useGetSalesQuery } from "state/api";
 // Breakdown Chart
 const BreakdownChart = ({ isDashboard = false }) => {
   const { data, isLoading } = useGetSalesQuery();
+  const theme = useTheme();
+
+  // Loader
+  if (!data || isLoading) {
