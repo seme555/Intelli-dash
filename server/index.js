@@ -10,3 +10,6 @@ import morgan from "morgan";
 import { rateLimiter } from "./middlewares/rateLimiter.js";
 
 // Routes imports
+import clientRoutes from "./routes/client.js";
+import generalRoutes from "./routes/general.js";
+import managementRoutes from "./routes/management.js";
