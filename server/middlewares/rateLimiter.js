@@ -6,3 +6,5 @@ export const rateLimiter = rateLimit({
   message: "You have exceeded the 200 requests in 24 hrs limit!",
   standardHeaders: true,
   legacyHeaders: false,
+});
+
