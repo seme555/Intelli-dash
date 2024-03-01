@@ -10,3 +10,7 @@ import Navbar from "./Navbar";
 import OverviewChart from "./OverviewChart";
 import Sidebar from "./Sidebar";
 import StatBox from "./StatBox";
+
+// export components
+export {
+  BreakdownChart,
