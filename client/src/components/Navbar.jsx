@@ -10,3 +10,11 @@ import {
   Button,
   Box,
   Typography,
+  IconButton,
+  InputBase,
+} from "@mui/material";
+import {
+  LightModeOutlined,
+  DarkModeOutlined,
+  Menu as MenuIcon,
+  Search,
