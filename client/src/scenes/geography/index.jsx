@@ -6,3 +6,14 @@ import { useGetGeographyQuery } from "state/api";
 import { geoData } from "state/geoData";
 import { Header } from "components";
 
+// Geography
+const Geography = () => {
+  // theme
+  const theme = useTheme();
+  // get data
+  const { data } = useGetGeographyQuery();
+
+  return (
+    <Box m="1.5rem 2.5rem">
+      {/* Header */}
+      <Header title="GEOGRAPHY" subtitle="Find where your users are located." />
