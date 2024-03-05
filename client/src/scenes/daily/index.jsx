@@ -5,3 +5,8 @@ import { ResponsiveLine } from "@nivo/line";
 
 import { useGetSalesQuery } from "state/api";
 import { Header } from "components";
+
+import "react-datepicker/dist/react-datepicker.css";
+
+// Daily
+const Daily = () => {
