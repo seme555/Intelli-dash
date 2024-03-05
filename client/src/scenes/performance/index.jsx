@@ -7,3 +7,7 @@ import { useGetUserPerformanceQuery } from "state/api";
 import { Header, CustomColumnMenu } from "components";
 
 // Performance
+const Performance = () => {
+  // theme
+  const theme = useTheme();
+  // Get user id from redux state
