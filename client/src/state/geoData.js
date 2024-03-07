@@ -6,3 +6,11 @@ export const geoData = {
   features: [
     {
       type: "Feature",
+      properties: {
+        name: "Afghanistan",
+      },
+      geometry: {
+        type: "Polygon",
+        coordinates: [
+          [
+            [61.210817, 35.650072],
