@@ -7,3 +7,12 @@ import ProductStat from "../models/ProductStat.js";
 import User from "../models/User.js";
 import Transaction from "../models/Transaction.js";
 
+// Get Products
+export const getProducts = async (_, res) => {
+  try {
+    const products = await Product.find();
+    const productsWithStats = await Promise.all(
+      products.map(async (product) => {
+        const stat = await ProductStat.find({
+          productId: product._id,
+        });
