@@ -7,3 +7,12 @@ const AffiliateStatSchema = new mongoose.Schema(
     affiliateSales: {
       type: [mongoose.Types.ObjectId],
       ref: "Transaction",
+    },
+  },
+  { timestamps: true }
+);
+
+const AffiliateStat = mongoose.model("AffiliateStat", AffiliateStatSchema);
+
+export default AffiliateStat;
+
