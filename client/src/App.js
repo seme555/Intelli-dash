@@ -21,3 +21,9 @@ import {
   Breakdown,
   Admin,
   Performance,
+} from "scenes";
+
+// App
+const App = () => {
+  // Dark/Light mode
+  const mode = useSelector((state) => state.global.mode);
