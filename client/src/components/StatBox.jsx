@@ -9,3 +9,7 @@ const StatBox = ({ title, value, increase, icon, description }) => {
   const theme = useTheme();
   return (
     <Box
+      gridColumn="span 2"
+      gridRow="span 1"
+      display="flex"
+      flexDirection="column"
