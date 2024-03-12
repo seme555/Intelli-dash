@@ -6,3 +6,12 @@ import {
   CardContent,
   Collapse,
   Button,
+  Typography,
+  Rating,
+  useTheme,
+  useMediaQuery,
+  CircularProgress,
+} from "@mui/material";
+
+import { useGetProductsQuery } from "state/api";
+import { Header } from "components";
