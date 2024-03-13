@@ -14,3 +14,8 @@ const Overview = () => {
       <Header
         title="OVERVIEW"
         subtitle="Overview of general revenue and profit"
+      />
+
+      {/* Content */}
+      <Box height="75vh">
+        {/* Select View Form */}
