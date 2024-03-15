@@ -18,3 +18,13 @@ const Admin = () => {
       headerName: "ID",
       flex: 1,
     },
+    {
+      field: "name",
+      headerName: "Name",
+      flex: 0.5,
+    },
+    {
+      field: "email",
+      headerName: "Email",
+      flex: 1,
+    },
