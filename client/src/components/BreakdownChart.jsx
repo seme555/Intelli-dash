@@ -11,3 +11,12 @@ const BreakdownChart = ({ isDashboard = false }) => {
 
   // Loader
   if (!data || isLoading) {
+    return (
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        height="100%"
+      >
+        <CircularProgress size={20} aria-label="Loading..." color="secondary" />
+      </Box>
