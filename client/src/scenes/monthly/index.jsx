@@ -15,3 +15,13 @@ const Monthly = () => {
   const theme = useTheme();
 
   // formatted data
+  const [formattedData] = useMemo(() => {
+    if (!data) return [];
+
+    // monthly data
+    const { monthlyData } = data;
+
+    // total sales line
+    const totalSalesLine = {
+      id: "totalSales",
+      color: theme.palette.secondary.main,
