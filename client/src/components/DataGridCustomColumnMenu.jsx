@@ -15,3 +15,9 @@ const CustomColumnMenu = (props) => {
       open={open}
     >
       {/* Menu Items */}
+      <GridFilterMenuItem onClick={hideMenu} column={currentColumn} />
+      <HideGridColMenuItem onClick={hideMenu} column={currentColumn} />
+    </GridColumnMenuContainer>
+  );
+};
+
