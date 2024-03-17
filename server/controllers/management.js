@@ -15,3 +15,7 @@ export const getAdmins = async (_, res) => {
   }
 };
 
+// Get User Performance
+export const getUserPerformance = async (req, res) => {
+  try {
+    const { id } = req.params;
