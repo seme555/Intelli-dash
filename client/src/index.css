@@ -13,3 +13,10 @@ body,
 
 /* Scrollbar */
 ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #21295c;
+}
