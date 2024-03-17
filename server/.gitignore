@@ -16,3 +16,9 @@
 
 # environment variables
 .env*
+!.env.example
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
