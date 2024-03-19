@@ -13,3 +13,11 @@ import { rateLimiter } from "./middlewares/rateLimiter.js";
 import clientRoutes from "./routes/client.js";
 import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
+import salesRoutes from "./routes/sales.js";
+
+// Data imports
+import User from "./models/User.js";
+import Product from "./models/Product.js";
+import ProductStat from "./models/ProductStat.js";
+import Transaction from "./models/Transaction.js";
+import OverallStat from "./models/OverallStat.js";
