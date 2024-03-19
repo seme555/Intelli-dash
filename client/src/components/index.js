@@ -14,3 +14,13 @@ import StatBox from "./StatBox";
 // export components
 export {
   BreakdownChart,
+  CustomColumnMenu,
+  DataGridCustomToolbar,
+  FlexBetween,
+  Header,
+  Navbar,
+  OverviewChart,
+  Sidebar,
+  StatBox,
+};
+
