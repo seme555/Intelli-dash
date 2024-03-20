@@ -9,3 +9,11 @@ import { Header, DataGridCustomToolbar } from "components";
 const Transactions = () => {
   // theme
   const theme = useTheme();
+
+  // values for backend
+  const [page, setPage] = useState(0);
+  const [pageSize, setPageSize] = useState(20);
+  const [sort, setSort] = useState({});
+  const [search, setSearch] = useState("");
+
+  // search
