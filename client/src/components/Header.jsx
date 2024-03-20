@@ -19,3 +19,11 @@ const Header = ({ title, subtitle }) => {
 
       {/* Subtitle */}
       <Typography variant="h5" color={theme.palette.secondary[300]}>
+        {subtitle}
+      </Typography>
+    </Box>
+  );
+};
+
+export default Header;
+
