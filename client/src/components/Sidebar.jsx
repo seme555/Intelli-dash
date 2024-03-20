@@ -16,3 +16,8 @@ import {
 import {
   SettingsOutlined,
   ChevronLeft,
+  ChevronRightOutlined,
+  HomeOutlined,
+  ShoppingCartOutlined,
+  Groups2Outlined,
+  ReceiptLongOutlined,
