@@ -12,3 +12,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
 
   // get chart data
   const [totalSalesLine, totalUnitsLine] = useMemo(() => {
+    if (!data) return [];
+
+    // monthly data
+    const { monthlyData } = data;
