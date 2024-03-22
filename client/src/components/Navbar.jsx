@@ -18,3 +18,7 @@ import {
   DarkModeOutlined,
   Menu as MenuIcon,
   Search,
+  SettingsOutlined,
+  ArrowDropDownOutlined,
+  GitHub,
+} from "@mui/icons-material";
