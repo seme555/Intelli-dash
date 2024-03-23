@@ -14,3 +14,13 @@ import Breakdown from "./breakdown";
 import Admin from "./admin";
 import Performance from "./performance";
 
+// export scenes
+export {
+  Layout,
+  Dashboard,
+  Products,
+  Customers,
+  Transactions,
+  Geography,
+  Overview,
+  Daily,
