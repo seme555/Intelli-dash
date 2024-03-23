@@ -11,3 +11,9 @@ const Performance = () => {
   // theme
   const theme = useTheme();
   // Get user id from redux state
+  const userId = useSelector((state) => state.global.userId);
+  // get data
+  const { data, isLoading } = useGetUserPerformanceQuery(userId);
+
+  // data columns
+  const columns = [
