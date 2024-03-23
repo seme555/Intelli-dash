@@ -14,3 +14,15 @@ export const api = createApi({
     "Producs",
     "Customers",
     "Transactions",
+    "Geography",
+    "Sales",
+    "Admins",
+    "Performance",
+    "Dashboard",
+  ],
+  // endpoints
+  endpoints: (build) => ({
+    getUser: build.query({
+      query: (id) => `general/user/${id}`,
+      providesTags: ["User"],
+    }),
