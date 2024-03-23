@@ -10,3 +10,8 @@ import "react-datepicker/dist/react-datepicker.css";
 
 // Daily
 const Daily = () => {
+  // keep track of start & end date
+  const [startDate, setStartDate] = useState(new Date("2021-02-01"));
+  const [endDate, setEndDate] = useState(new Date("2021-03-01"));
+
+  // get data
