@@ -16,3 +16,8 @@ export const getProducts = async (_, res) => {
         const stat = await ProductStat.find({
           productId: product._id,
         });
+
+        return {
+          ...product._doc,
+          stat,
+        };
