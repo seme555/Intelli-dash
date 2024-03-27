@@ -15,3 +15,9 @@ export const getUser = async (req, res) => {
 };
 
 // Get Dashboard Stats
+export const getDashboardStats = async (_, res) => {
+  try {
+    // Hardcoded Values
+    const currentMonth = "November";
+    const currentYear = 2021;
+    const currentDate = "2021-11-15";
