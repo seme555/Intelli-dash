@@ -9,3 +9,15 @@ import { Header } from "components";
 const Customers = () => {
   // theme
   const theme = useTheme();
+  // get data
+  const { data, isLoading } = useGetCustomersQuery();
+
+  // data columns
+  const columns = [
+    {
+      field: "_id",
+      headerName: "ID",
+      flex: 1,
+    },
+    {
+      field: "name",
