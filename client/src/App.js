@@ -27,3 +27,15 @@ import {
 const App = () => {
   // Dark/Light mode
   const mode = useSelector((state) => state.global.mode);
+  // theme setting
+  const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
+
+  return (
+    <div className="app">
+      <BrowserRouter>
+        {/* Theme Provider */}
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Routes>
+            {/* Routes */}
+            <Route element={<Layout />}>
