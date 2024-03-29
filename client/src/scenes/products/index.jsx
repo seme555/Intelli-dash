@@ -15,3 +15,10 @@ import {
 
 import { useGetProductsQuery } from "state/api";
 import { Header } from "components";
+
+// Product
+const Product = ({
+  _id,
+  name,
+  description,
+  price,
