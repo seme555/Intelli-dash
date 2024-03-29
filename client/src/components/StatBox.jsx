@@ -13,3 +13,15 @@ const StatBox = ({ title, value, increase, icon, description }) => {
       gridRow="span 1"
       display="flex"
       flexDirection="column"
+      justifyContent="space-between"
+      p="1.25rem 1rem"
+      flex="1 1 100%"
+      backgroundColor={theme.palette.background.alt}
+      borderRadius="0.55rem"
+    >
+      <FlexBetween>
+        {/* title */}
+        <Typography variant="h6" sx={{ color: theme.palette.secondary[100] }}>
+          {title}
+        </Typography>
+
