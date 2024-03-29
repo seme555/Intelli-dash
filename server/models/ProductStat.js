@@ -18,3 +18,12 @@ const ProductStatSchema = new mongoose.Schema(
       {
         data: String,
         totalSales: Number,
+        totalUnits: Number,
+      },
+    ],
+  },
+  { timestamps: true }
+);
+
+const ProductStat = mongoose.model("ProductStat", ProductStatSchema);
+
