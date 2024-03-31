@@ -10,3 +10,12 @@ const Breakdown = () => {
       <Header title="BREAKDOWN" subtitle="Breakdown of sales by category" />
 
       {/* Content */}
+      <Box mt="40px" height="75vh">
+        {/* chart */}
+        <BreakdownChart />
+      </Box>
+    </Box>
+  );
+};
+
+export default Breakdown;
