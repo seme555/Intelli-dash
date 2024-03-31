@@ -25,3 +25,14 @@ import {
   BreakdownChart,
   OverviewChart,
   StatBox,
+} from "components";
+
+const Dashboard = () => {
+  // theme
+  const theme = useTheme();
+  // is large desktop screen
+  const isNonMediumScreen = useMediaQuery("(min-width: 1200px)");
+  // get data
+  const { data, isLoading } = useGetDashboardQuery();
+  // banner state
+  const [showBanner, setShowBanner] = useState(false);
