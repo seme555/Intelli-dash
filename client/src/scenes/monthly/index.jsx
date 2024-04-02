@@ -25,3 +25,6 @@ const Monthly = () => {
     const totalSalesLine = {
       id: "totalSales",
       color: theme.palette.secondary.main,
+      data: [],
+    };
+
