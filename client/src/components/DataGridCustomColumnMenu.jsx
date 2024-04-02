@@ -21,3 +21,5 @@ const CustomColumnMenu = (props) => {
   );
 };
 
+export default CustomColumnMenu;
+
