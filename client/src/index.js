@@ -21,3 +21,9 @@ const store = configureStore({
 setupListeners(store.dispatch);
 
 // Rendering App
+createRoot(document.getElementById("root")).render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
