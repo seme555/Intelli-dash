@@ -28,3 +28,14 @@ const Admin = () => {
       headerName: "Email",
       flex: 1,
     },
+    {
+      field: "phoneNumber",
+      headerName: "Phone Number",
+      flex: 0.5,
+      renderCell: (params) => {
+        return params.value.replace(/^(\d{3})(\d{3})(\d{4})/, "($1) $2-$3"); // format phone number (123) 456-7890
+      },
+    },
+    {
+      field: "country",
+      headerName: "Country",
