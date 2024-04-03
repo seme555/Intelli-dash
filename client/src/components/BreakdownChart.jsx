@@ -20,3 +20,13 @@ const BreakdownChart = ({ isDashboard = false }) => {
       >
         <CircularProgress size={20} aria-label="Loading..." color="secondary" />
       </Box>
+    );
+  }
+
+  // theme colors
+  const colors = [
+    theme.palette.secondary[500],
+    theme.palette.secondary[300],
+    theme.palette.secondary[300],
+    theme.palette.secondary[500],
+  ];
