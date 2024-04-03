@@ -19,3 +19,15 @@ export const getAdmins = async (_, res) => {
 export const getUserPerformance = async (req, res) => {
   try {
     const { id } = req.params;
+
+    const userWithStats = await User.aggregate([
+      { $match: { _id: new mongoose.Types.ObjectId(id) } }, // Match user id
+      {
+        // Compare user id with affiliate stats table
+        $lookup: {
+          from: "affiliatestats",
+          localField: "_id",
+          foreignField: "userId",
+          as: "affiliateStats",
+        },
+      },
