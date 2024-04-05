@@ -18,3 +18,13 @@ const OverallStatSchema = new mongoose.Schema(
       {
         date: String,
         totalSales: Number,
+        totalUnits: Number,
+      },
+    ],
+    salesByCategory: {
+      type: Map,
+      of: Number,
+    },
+  },
+  { timestamps: true }
+);
