@@ -26,3 +26,12 @@ const Geography = () => {
         borderRadius="4px"
       >
         {/* choropleth map */}
+        {data ? (
+          <ResponsiveChoropleth
+            data={data}
+            theme={{
+              axis: {
+                domain: {
+                  line: {
+                    stroke: theme.palette.secondary[200],
+                  },
