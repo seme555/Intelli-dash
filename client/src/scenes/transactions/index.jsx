@@ -17,3 +17,12 @@ const Transactions = () => {
   const [search, setSearch] = useState("");
 
   // search
+  const [searchInput, setSearchInput] = useState("");
+  // get data
+  const { data, isLoading } = useGetTransactionsQuery({
+    page,
+    pageSize,
+    sort: JSON.stringify(sort),
+    search,
+  });
+
