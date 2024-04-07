@@ -21,3 +21,7 @@ export const dataAffiliateStat = [
     ],
   },
   {
+    _id: "6371251df03239e680000034",
+    userId: "63701cc1f03239d40b000044",
+    affiliateSales: [
+      "63701d74f032398675000144",
