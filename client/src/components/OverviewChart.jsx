@@ -16,3 +16,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
 
     // monthly data
     const { monthlyData } = data;
+
+    // total sales line data
+    const totalSalesLine = {
+      id: "totalSales",
