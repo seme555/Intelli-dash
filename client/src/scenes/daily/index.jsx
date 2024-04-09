@@ -15,3 +15,15 @@ const Daily = () => {
   const [endDate, setEndDate] = useState(new Date("2021-03-01"));
 
   // get data
+  const { data } = useGetSalesQuery();
+  const theme = useTheme();
+
+  // format data
+  const [formattedData] = useMemo(() => {
+    if (!data) return [];
+
+    // daily data
+    const { dailyData } = data;
+
+    // total sales line
+    const totalSalesLine = {
