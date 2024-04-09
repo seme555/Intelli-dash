@@ -24,3 +24,9 @@ export {
   Geography,
   Overview,
   Daily,
+  Monthly,
+  Breakdown,
+  Admin,
+  Performance,
+};
+
