@@ -17,3 +17,6 @@ const Performance = () => {
 
   // data columns
   const columns = [
+    {
+      field: "_id",
+      headerName: "ID",
