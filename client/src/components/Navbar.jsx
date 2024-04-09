@@ -22,3 +22,11 @@ import {
   ArrowDropDownOutlined,
   GitHub,
 } from "@mui/icons-material";
+
+import { FlexBetween } from ".";
+import profileImage from "assets/profile.jpeg";
+
+// Navbar
+const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
+  // redux dispatch items
+  const dispatch = useDispatch();
