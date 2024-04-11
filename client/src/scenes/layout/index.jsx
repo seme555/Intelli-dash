@@ -25,3 +25,10 @@ const Layout = () => {
         isNonMobile={isNonMobile}
         drawerWidth="250px"
         isSidebarOpen={isSidebarOpen}
+        setIsSidebarOpen={setIsSidebarOpen}
+      />
+
+      {/* Navbar */}
+      <Box flexGrow={1}>
+        <Navbar
+          user={data || {}}
