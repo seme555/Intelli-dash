@@ -21,3 +21,12 @@ export const getDashboardStats = async (_, res) => {
     const currentMonth = "November";
     const currentYear = 2021;
     const currentDate = "2021-11-15";
+
+    // Recent Transactions
+    const transactions = await Transaction.find()
+      .limit(50)
+      .sort({ createdAt: -1 });
+
+    // Overall Stats
+    const overallStat = await OverallStat.find({ year: currentYear });
+
