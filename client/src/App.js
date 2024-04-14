@@ -39,3 +39,10 @@ const App = () => {
           <Routes>
             {/* Routes */}
             <Route element={<Layout />}>
+              <Route path="/" element={<Navigate to="/dashboard" replace />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/customers" element={<Customers />} />
+              <Route path="/transactions" element={<Transactions />} />
+              <Route path="/geography" element={<Geography />} />
+              <Route path="/overview" element={<Overview />} />
