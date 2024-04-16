@@ -25,3 +25,14 @@ const StatBox = ({ title, value, increase, icon, description }) => {
           {title}
         </Typography>
 
+        {/* icon */}
+        {icon}
+      </FlexBetween>
+
+      {/* value */}
+      <Typography
+        variant="h3"
+        fontWeight="600"
+        sx={{ color: theme.palette.secondary[200] }}
+      >
+        {value}
