@@ -29,3 +29,13 @@ const Overview = () => {
             value={view}
             label="View"
             onChange={(e) => setView(e.target.value)}
+          >
+            <MenuItem value="sales">Sales</MenuItem>
+            <MenuItem value="units">Units</MenuItem>
+          </Select>
+        </FormControl>
+
+        {/* Overview Chart */}
+        <OverviewChart view={view} />
+      </Box>
+    </Box>
