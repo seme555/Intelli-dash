@@ -22,3 +22,14 @@ const Product = ({
   name,
   description,
   price,
+  rating,
+  category,
+  supply,
+  stat,
+}) => {
+  // theme
+  const theme = useTheme();
+  // is expanded
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
