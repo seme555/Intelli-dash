@@ -36,3 +36,14 @@ const Dashboard = () => {
   const { data, isLoading } = useGetDashboardQuery();
   // banner state
   const [showBanner, setShowBanner] = useState(false);
+
+  // check local storage on mount
+  useEffect(() => {
+    const bannerDismissed = localStorage.getItem("bannerDismissed");
+    if (!bannerDismissed) {
+      setShowBanner(true);
+    }
+  }, []);
+
+  // handle banner close
+  const handleBannerClose = () => {
