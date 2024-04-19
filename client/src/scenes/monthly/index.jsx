@@ -28,3 +28,14 @@ const Monthly = () => {
       data: [],
     };
 
+    // total units line
+    const totalUnitsLine = {
+      id: "totalUnits",
+      color: theme.palette.secondary[600],
+      data: [],
+    };
+
+    // factor monthly data
+    Object.values(monthlyData).forEach(({ month, totalSales, totalUnits }) => {
+      totalSalesLine.data = [
+        ...totalSalesLine.data,
