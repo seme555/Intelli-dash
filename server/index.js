@@ -26,3 +26,12 @@ import {
   dataUser,
   dataProduct,
   dataProductStat,
+  dataTransaction,
+  dataOverallStat,
+  dataAffiliateStat,
+} from "./data/index.js";
+
+// Configuration
+dotenv.config();
+const app = express();
+app.use(express.json());
