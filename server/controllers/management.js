@@ -31,3 +31,13 @@ export const getUserPerformance = async (req, res) => {
           as: "affiliateStats",
         },
       },
+      { $unwind: "$affiliateStats" }, // Flatten Array/Object
+    ]);
+
+    // sale transactions
+    const saleTransactions = await Promise.all(
+      userWithStats[0].affiliateStats.affiliateSales.map((id) => {
+        return Transaction.findById(id);
+      })
+    );
+
