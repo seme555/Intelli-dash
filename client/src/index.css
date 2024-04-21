@@ -24,3 +24,13 @@ body,
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #7a7f9d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #717cc1;
+}
+
+/* Date Picker */
+.custom-datepicker {
+  padding: 8px 12px;
