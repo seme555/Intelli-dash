@@ -33,3 +33,14 @@ import {
 import { FlexBetween } from ".";
 import profileImage from "assets/profile.jpeg";
 
+// Nav items
+const navItems = [
+  {
+    text: "Dashboard",
+    icon: <HomeOutlined />,
+  },
+  {
+    text: "Client Facing",
+    icon: null,
+  },
+  {
