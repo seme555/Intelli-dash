@@ -30,3 +30,7 @@ import profileImage from "assets/profile.jpeg";
 const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
   // redux dispatch items
   const dispatch = useDispatch();
+  // theme
+  const theme = useTheme();
+
+  // nav state
