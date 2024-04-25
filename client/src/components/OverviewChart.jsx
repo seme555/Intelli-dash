@@ -20,3 +20,15 @@ const OverviewChart = ({ isDashboard = false, view }) => {
     // total sales line data
     const totalSalesLine = {
       id: "totalSales",
+      color: theme.palette.secondary.main,
+      data: [],
+    };
+
+    // total units line data
+    const totalUnitsLine = {
+      id: "totalUnits",
+      color: theme.palette.secondary[600],
+      data: [],
+    };
+
+    // factor monthly data
