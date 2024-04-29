@@ -37,3 +37,9 @@ export const tokensDark = {
     500: "#ffd166",
     600: "#cca752",
     700: "#997d3d",
+    800: "#665429",
+    900: "#332a14",
+  },
+};
+
+// function that reverses the color palette
