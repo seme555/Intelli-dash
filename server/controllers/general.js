@@ -30,3 +30,12 @@ export const getDashboardStats = async (_, res) => {
     // Overall Stats
     const overallStat = await OverallStat.find({ year: currentYear });
 
+    const {
+      totalCustomers,
+      yearlyTotalSoldUnits,
+      yearlySalesTotal,
+      monthlyData,
+      salesByCategory,
+    } = overallStat[0];
+
+    // This month stats
