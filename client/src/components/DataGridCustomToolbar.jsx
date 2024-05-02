@@ -33,3 +33,15 @@ const DataGridCustomToolbar = ({ searchInput, setSearchInput, setSearch }) => {
             endAdornment: (
               <InputAdornment position="end">
                 <IconButton
+                  onClick={() => {
+                    setSearch(searchInput);
+                    setSearchInput("");
+                  }}
+                >
+                  <Search />
+                </IconButton>
+              </InputAdornment>
+            ),
+          }}
+        />
+      </FlexBetween>
