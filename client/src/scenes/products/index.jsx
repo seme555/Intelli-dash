@@ -33,3 +33,13 @@ const Product = ({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
+    <Card
+      sx={{
+        backgroundImage: "none",
+        backgroundColor: theme.palette.background.alt,
+        borderRadius: "0.55rem",
+      }}
+    >
+      {/* Content */}
+      <CardContent>
+        {/* Category */}
