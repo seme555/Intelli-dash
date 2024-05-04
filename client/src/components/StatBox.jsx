@@ -36,3 +36,15 @@ const StatBox = ({ title, value, increase, icon, description }) => {
         sx={{ color: theme.palette.secondary[200] }}
       >
         {value}
+      </Typography>
+
+      <FlexBetween gap="1rem">
+        {/* increase % */}
+        <Typography
+          variant="h5"
+          fontStyle="italic"
+          sx={{ color: theme.palette.light }}
+        >
+          {increase}
+        </Typography>
+
