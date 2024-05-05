@@ -47,3 +47,7 @@ const Dashboard = () => {
 
   // handle banner close
   const handleBannerClose = () => {
+    setShowBanner(false);
+    localStorage.setItem("bannerDismissed", "true");
+  };
+
