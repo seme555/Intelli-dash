@@ -39,3 +39,8 @@ const Overview = () => {
         <OverviewChart view={view} />
       </Box>
     </Box>
+  );
+};
+
+export default Overview;
+
