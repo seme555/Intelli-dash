@@ -47,3 +47,9 @@ const Admin = () => {
       flex: 1,
     },
     {
+      field: "role",
+      headerName: "Role",
+      flex: 0.5,
+    },
+  ];
+
