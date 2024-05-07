@@ -39,3 +39,6 @@ const Monthly = () => {
     Object.values(monthlyData).forEach(({ month, totalSales, totalUnits }) => {
       totalSalesLine.data = [
         ...totalSalesLine.data,
+        {
+          x: month,
+          y: totalSales,
