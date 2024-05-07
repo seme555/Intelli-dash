@@ -36,3 +36,12 @@ const BreakdownChart = ({ isDashboard = false }) => {
     ([category, sales], i) => ({
       id: category,
       label: category,
+      value: sales,
+      color: colors[i],
+    })
+  );
+
+  return (
+    <Box
+      height={isDashboard ? "400px" : "100%"}
+      width={undefined}
