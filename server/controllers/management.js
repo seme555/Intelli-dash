@@ -41,3 +41,6 @@ export const getUserPerformance = async (req, res) => {
       })
     );
 
+    // filtered sale transactions
+    const filteredSaleTransactions = saleTransactions.filter(
+      (transaction) => transaction !== null
