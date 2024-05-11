@@ -36,3 +36,9 @@ const Transactions = () => {
     {
       field: "userId",
       headerName: "User ID",
+      flex: 0.5,
+    },
+    {
+      field: "createdAt",
+      headerName: "Created At",
+      flex: 1,
