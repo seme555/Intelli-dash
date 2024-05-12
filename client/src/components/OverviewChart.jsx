@@ -32,3 +32,15 @@ const OverviewChart = ({ isDashboard = false, view }) => {
     };
 
     // factor monthly data
+    Object.values(monthlyData).reduce(
+      (acc, { month, totalSales, totalUnits }) => {
+        const currentSales = acc.sales + totalSales;
+        const currentUnits = acc.units + totalUnits;
+
+        totalSalesLine.data = [
+          ...totalSalesLine.data,
+          {
+            x: month,
+            y: currentSales,
+          },
+        ];
