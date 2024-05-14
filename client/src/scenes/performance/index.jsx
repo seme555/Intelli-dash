@@ -24,3 +24,9 @@ const Performance = () => {
     },
     {
       field: "userId",
+      headerName: "User ID",
+      flex: 1,
+    },
+    {
+      field: "createdAt",
+      headerName: "Created At",
