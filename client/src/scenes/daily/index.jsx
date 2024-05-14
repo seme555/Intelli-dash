@@ -36,3 +36,10 @@ const Daily = () => {
     const totalUnitsLine = {
       id: "totalUnits",
       color: theme.palette.secondary[600],
+      data: [],
+    };
+
+    // factor daily data
+    Object.values(dailyData).forEach(({ date, totalSales, totalUnits }) => {
+      // formatted date
+      const dateFormatted = new Date(date);
