@@ -38,3 +38,8 @@ const Layout = () => {
         <Outlet />
       </Box>
     </Box>
+  );
+};
+
+export default Layout;
+
