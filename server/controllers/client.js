@@ -40,3 +40,6 @@ export const getCustomers = async (req, res) => {
   }
 };
 
+// Get Transactions
+export const getTransactions = async (req, res) => {
+  try {
