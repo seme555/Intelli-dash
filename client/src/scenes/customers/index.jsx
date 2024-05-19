@@ -39,3 +39,7 @@ const Customers = () => {
     },
     {
       field: "country",
+      headerName: "Country",
+      flex: 0.4,
+    },
+    {
