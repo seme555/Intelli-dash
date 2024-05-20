@@ -45,3 +45,7 @@ const DataGridCustomToolbar = ({ searchInput, setSearchInput, setSearch }) => {
           }}
         />
       </FlexBetween>
+    </GridToolbarContainer>
+  );
+};
+
