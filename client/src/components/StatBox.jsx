@@ -48,3 +48,12 @@ const StatBox = ({ title, value, increase, icon, description }) => {
           {increase}
         </Typography>
 
+        {/* description */}
+        <Typography>{description}</Typography>
+      </FlexBetween>
+    </Box>
+  );
+};
+
+export default StatBox;
+
