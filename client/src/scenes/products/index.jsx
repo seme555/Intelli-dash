@@ -43,3 +43,15 @@ const Product = ({
       {/* Content */}
       <CardContent>
         {/* Category */}
+        <Typography
+          sx={{ fontSize: 14 }}
+          color={theme.palette.secondary[700]}
+          gutterBottom
+        >
+          {category}
+        </Typography>
+
+        {/* Name */}
+        <Typography variant="h5" component="div">
+          {name}
+        </Typography>
