@@ -42,3 +42,14 @@ const Monthly = () => {
         {
           x: month,
           y: totalSales,
+        },
+      ];
+
+      totalUnitsLine.data = [
+        ...totalUnitsLine.data,
+        {
+          x: month,
+          y: totalUnits,
+        },
+      ];
+    });
