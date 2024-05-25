@@ -45,3 +45,12 @@ const BreakdownChart = ({ isDashboard = false }) => {
     <Box
       height={isDashboard ? "400px" : "100%"}
       width={undefined}
+      minHeight={isDashboard ? "325px" : undefined}
+      minWidth={isDashboard ? "325px" : undefined}
+      position="relative"
+    >
+      {/* Pie chart */}
+      <ResponsivePie
+        data={formattedData}
+        theme={{
+          axis: {
