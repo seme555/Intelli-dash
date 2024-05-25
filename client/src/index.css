@@ -43,3 +43,11 @@ body,
   transition: border-color 0.2s ease;
 }
 
+.custom-datepicker:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.custom-calendar {
+  font-family: inherit;
+  border-radius: 8px;
