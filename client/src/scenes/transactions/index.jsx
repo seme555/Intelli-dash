@@ -42,3 +42,13 @@ const Transactions = () => {
       field: "createdAt",
       headerName: "Created At",
       flex: 1,
+    },
+    {
+      field: "products",
+      headerName: "# of Products",
+      flex: 0.5,
+      sortable: false,
+      renderCell: (params) => params.value.length,
+    },
+    {
+      field: "cost",
