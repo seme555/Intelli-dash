@@ -58,15 +58,15 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => {
+  .then(async () => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
-    // Only run first time when running app to insert data into mongodb
-    User.insertMany(dataUser);
-    Product.insertMany(dataProduct);
-    ProductStat.insertMany(dataProductStat);
-    Transaction.insertMany(dataTransaction);
-    OverallStat.insertMany(dataOverallStat);
-    AffiliateStat.insertMany(dataAffiliateStat);
+    // Seed data only if collections are empty
+    if (await User.countDocuments() === 0) await User.insertMany(dataUser);
+    if (await Product.countDocuments() === 0) await Product.insertMany(dataProduct);
+    if (await ProductStat.countDocuments() === 0) await ProductStat.insertMany(dataProductStat);
+    if (await Transaction.countDocuments() === 0) await Transaction.insertMany(dataTransaction);
+    if (await OverallStat.countDocuments() === 0) await OverallStat.insertMany(dataOverallStat);
+    if (await AffiliateStat.countDocuments() === 0) await AffiliateStat.insertMany(dataAffiliateStat);
   })
   .catch((error) => console.log(`${error} did not connect.`));
