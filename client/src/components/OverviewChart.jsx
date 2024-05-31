@@ -44,3 +44,15 @@ const OverviewChart = ({ isDashboard = false, view }) => {
             y: currentSales,
           },
         ];
+
+        totalUnitsLine.data = [
+          ...totalUnitsLine.data,
+          {
+            x: month,
+            y: currentUnits,
+          },
+        ];
+
+        return { sales: currentSales, units: currentUnits };
+      },
+      { sales: 0, units: 0 }
