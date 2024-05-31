@@ -48,3 +48,13 @@ const Geography = () => {
                   },
                   text: {
                     fill: theme.palette.secondary[200],
+                  },
+                },
+              },
+              legends: {
+                text: {
+                  fill: theme.palette.secondary[200],
+                },
+              },
+              tooltip: {
+                container: {
