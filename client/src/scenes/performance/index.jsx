@@ -30,3 +30,8 @@ const Performance = () => {
     {
       field: "createdAt",
       headerName: "Created At",
+      flex: 1,
+    },
+    {
+      field: "products",
+      headerName: "# of Products",
