@@ -43,3 +43,7 @@ const Daily = () => {
     Object.values(dailyData).forEach(({ date, totalSales, totalUnits }) => {
       // formatted date
       const dateFormatted = new Date(date);
+      if (dateFormatted >= startDate && dateFormatted <= endDate) {
+        const splitDate = date.substring(date.indexOf("-") + 1);
+
+        totalSalesLine.data = [
