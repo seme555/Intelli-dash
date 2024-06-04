@@ -54,3 +54,15 @@ function reverseTokens(tokensDark) {
       reversedObj[keys[i]] = values[length - i - 1];
     }
     reversedTokens[key] = reversedObj;
+  });
+  return reversedTokens;
+}
+export const tokensLight = reverseTokens(tokensDark);
+
+// mui theme settings
+export const themeSettings = (mode) => {
+  return {
+    palette: {
+      mode: mode,
+      ...(mode === "dark"
+        ? {
