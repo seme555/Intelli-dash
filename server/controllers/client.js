@@ -43,3 +43,15 @@ export const getCustomers = async (req, res) => {
 // Get Transactions
 export const getTransactions = async (req, res) => {
   try {
+    // sort - { "field": "userId", sort: "desc" }
+    const { page = 1, pageSize = 20, sort = null, search = "" } = req.query;
+
+    // sanitize search
+    var safeSearch = _.escapeRegExp(search);
+
+    // Formatted sort - { userId: -1 }
+    const generateSort = () => {
+      const sortParsed = JSON.parse(sort);
+      const sortFormatted = {
+        [sortParsed.field]: sortParsed.sort == "asc" ? 1 : -1,
+      };
