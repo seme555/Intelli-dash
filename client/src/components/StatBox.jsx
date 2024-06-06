@@ -56,4 +56,3 @@ const StatBox = ({ title, value, increase, icon, description }) => {
 };
 
 export default StatBox;
-

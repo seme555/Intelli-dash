@@ -59,3 +59,6 @@ export const getDashboardStats = async (_, res) => {
       transactions,
     });
   } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+};

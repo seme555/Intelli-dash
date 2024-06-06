@@ -55,3 +55,64 @@ export const getTransactions = async (req, res) => {
       const sortFormatted = {
         [sortParsed.field]: sortParsed.sort == "asc" ? 1 : -1,
       };
+
+      return sortFormatted;
+    };
+
+    // sort formatted
+    const sortFormatted = Boolean(sort) ? generateSort() : {};
+
+    // get transactions
+    const transactions = await Transaction.find({
+      $or: [
+        { cost: { $regex: new RegExp(safeSearch, "i") } },
+        { userId: { $regex: new RegExp(safeSearch, "i") } },
+      ],
+    })
+      .sort(sortFormatted)
+      .skip(page * pageSize)
+      .limit(pageSize);
+
+    // total transactions
+    const total = await Transaction.countDocuments({
+      name: { $regex: safeSearch, $options: "i" },
+    });
+
+    res.status(200).json({
+      transactions,
+      total,
+    });
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+};
+
+// Get Geography
+export const getGeography = async (req, res) => {
+  try {
+    const users = await User.find();
+
+    // Convert country ISO 2 -> ISO 3
+    const mappedLocations = users.reduce((acc, { country }) => {
+      const countryISO3 = getCountryISO3(country);
+      if (!acc[countryISO3]) {
+        acc[countryISO3] = 0;
+      }
+
+      acc[countryISO3]++;
+
+      return acc;
+    }, {});
+
+    // format countries to match geography
+    const formattedLocations = Object.entries(mappedLocations).map(
+      ([country, count]) => {
+        return { id: country, value: count };
+      }
+    );
+
+    res.status(200).json(formattedLocations);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+};

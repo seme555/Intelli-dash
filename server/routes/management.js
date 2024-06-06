@@ -9,4 +9,3 @@ router.get("/admins", getAdmins);
 router.get("/performance/:id", getUserPerformance);
 
 export default router;
-

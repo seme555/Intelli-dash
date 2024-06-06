@@ -49,3 +49,24 @@ app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
 
+// Mongoose Setup
+const PORT = process.env.PORT || 9000;
+console.log("✅ MONGODB_URL:", process.env.MONGODB_URL);
+
+mongoose
+  .connect(process.env.MONGODB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+
+    // Only run first time when running app to insert data into mongodb
+    User.insertMany(dataUser);
+    Product.insertMany(dataProduct);
+    ProductStat.insertMany(dataProductStat);
+    Transaction.insertMany(dataTransaction);
+    OverallStat.insertMany(dataOverallStat);
+    AffiliateStat.insertMany(dataAffiliateStat);
+  })
+  .catch((error) => console.log(`${error} did not connect.`));

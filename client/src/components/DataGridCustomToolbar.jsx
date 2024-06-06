@@ -49,3 +49,4 @@ const DataGridCustomToolbar = ({ searchInput, setSearchInput, setSearch }) => {
   );
 };
 
+export default DataGridCustomToolbar;

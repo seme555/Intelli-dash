@@ -11,4 +11,3 @@ export const getSales = async (_, res) => {
     res.status(404).json({ message: error.message });
   }
 };
-
