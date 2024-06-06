@@ -47,3 +47,15 @@ export const getDashboardStats = async (_, res) => {
     const todayStats = overallStat[0].dailyData.find(({ date }) => {
       return date === currentDate;
     });
+
+    res.status(200).json({
+      totalCustomers,
+      yearlyTotalSoldUnits,
+      yearlySalesTotal,
+      monthlyData,
+      salesByCategory,
+      thisMonthStats,
+      todayStats,
+      transactions,
+    });
+  } catch (error) {
